@@ -1,0 +1,142 @@
+/* login1.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+  background: #f3f3f3;
+}
+
+.form_parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button#hide {
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.password_container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox_region {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.checkbox_region input {
+  margin-right: 5px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+  background-color: #333;
+}
+
+.other_login_options {
+  text-align: center;
+  font-size: 14px;
+}
+
+.other_login_options a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.signin_accounts {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.signin_accounts img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 20px;
+  }
+
+  .password_container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button#hide {
+    align-self: flex-end;
+    margin-top: 8px;
+  }
+
+  .checkbox_region {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
